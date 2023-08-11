@@ -21,7 +21,7 @@ def create_message():
 # create a single string. The single_string should be a string and not a `None`
 name = "Monday"
 greeting = "Hello students!"
-single_string = None
+single_string = name + greeting
 
 
 # Use the following text to create a string and assign it to quoted_string:
@@ -94,7 +94,7 @@ first_names = [
     'Carlos',
     'Michael'
  ]
-last_four_names = None
+last_four_names = first_names[6:10]
 
 
 # The following code breaks the function. You haven't seen
@@ -103,4 +103,4 @@ last_four_names = None
 # * a fallback value of "John Doe" is returned
 def get_name():
     information = {}
-    return information["name"]
+    return information[name]
