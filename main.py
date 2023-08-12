@@ -11,7 +11,7 @@ To pass, all automated testing of your inputs have to pass their tests.
 # * The exception_message is correctly defined as a string
 def create_message():
     try:
-        exception_message = "This message is broken " + 1
+        exception_message = "This message is broken "
     except RuntimeError:
         raise
     return exception_message
@@ -21,18 +21,18 @@ def create_message():
 # create a single string. The single_string should be a string and not a `None`
 name = "Monday"
 greeting = "Hello students!"
-single_string = None
+single_string = name + greeting
 
 
 # Use the following text to create a string and assign it to quoted_string:
 # Sometimes you can use a ' character to denote minutes or " for seconds
-quoted_string = None
+quoted_string = """Sometimes you can use a ' character to denote minutes or " for seconds"""
 
 
 # The current condition does not evaluate correctly. Python has truthy values
 # and dictionaries is one of them. Update the code so that has_contacts will
 # evaluate to True instead of False
-contacts = {}
+contacts = {name}
 if contacts:
     has_contacts = True
 else:
@@ -45,7 +45,7 @@ else:
 # `apples` and `cost` variables
 apples = 4
 cost = 7.3
-numbers_string = None
+numbers_string = str(apples) + "apples cost" + str(cost)
 
 
 # from the following dictionary, define the file_sizes variable to hold all the sizes
@@ -57,7 +57,9 @@ files = {
     "objects": 55,
     "packed-refs refs": 120,
 }
-file_sizes = None
+
+# for value in files.values
+# file_sizes = value
 
 # from the same `files` dictionary, define the file_names variable so that it holds
 # the names only
